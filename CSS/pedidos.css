@@ -1,0 +1,158 @@
+:root{ 
+    --green: #0B3B24; 
+    --light: #f9f9f9; 
+    --text: #333; 
+    --border: #e0e0e0; 
+}
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+body{ 
+    color: var(--text); 
+    background: #fff; 
+    line-height: 1.6; 
+}
+a{ 
+    text-decoration: none; 
+    color: inherit; 
+    transition: 0.3s; 
+}
+ul{ 
+   list-style: none; 
+}
+.btn{ 
+    background: var(--green); 
+    color: #fff; 
+    padding: 12px 24px; 
+    border: none; 
+    cursor: pointer; 
+    display: inline-block; 
+    text-transform: uppercase; 
+    font-size: 0.9em; 
+    font-weight: bold; 
+    text-align: center; 
+}
+.btn:hover{ 
+    opacity: 0.9;
+}
+.container { 
+    padding: 40px 5%; 
+    min-height: 80vh; 
+}
+
+header { 
+    display: grid; 
+    grid-template-columns: auto 1fr auto; 
+    gap: 30px; 
+    align-items: center; 
+    padding: 20px 5%; 
+    border-bottom: 1px solid var(--border); 
+    background: #fff; 
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: url(../Image/Logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav { 
+    display: grid; 
+    grid-auto-flow: column; 
+    gap: 20px; 
+    justify-content: start; 
+}
+.nav a:hover, .nav a.active { 
+    color: var(--green); 
+    font-weight: bold;
+}
+.header-actions { 
+    display: grid; 
+    grid-auto-flow: column; 
+    gap: 15px; 
+    align-items: center; 
+}
+.perfil{
+    height: 30px;
+    width: 30px;
+    background-image: url(../Image/avatar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carrinho{
+    height: 30px;
+    width: 30px;
+    background-image: url(../Image/Cart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.search-bar { 
+    padding: 8px 12px; 
+    border: 1px solid var(--border); 
+    border-radius: 20px; 
+    background: var(--light); 
+}
+
+footer { 
+    background: var(--green); 
+    color: #fff; 
+    padding: 50px 5%; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    font-size: 0.9em; 
+}
+
+footer h3, footer h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+footer a {
+    color: #ccc;
+}
+footer a:hover {
+    color: #fff;
+}
+
+.orders-table {
+    width: 100%;
+    display: grid; gap: 10px;
+}
+.order-row {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+}
+.order-header {
+    font-weight: bold;
+    background: var(--light);
+    border-bottom: none;
+    border-radius: 5px;
+}
+.status-entregue {
+    color: #27ae60;
+    font-weight: bold;
+}
+.status-enviado {
+    Color: #f39c12;
+    font-weight: bold;
+}
+.status-processando {
+    color: #2980b9;
+    font-weight: bold;
+}
+.status-cancelado {
+    color: #c0392b;
+    font-weight: bold;
+}
+.btn-outline {
+    background: #fff;
+    color: var(--text);
+    border: 1px solid var(--border); 
+    padding: 8px 16px; font-size: 0.8em;
+}

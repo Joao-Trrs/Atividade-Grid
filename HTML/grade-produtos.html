@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/grade-produtos.css">
+    <title>Chás e Infusões | Bonsai Tea</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo"></a>
+        <nav class="nav">
+            <a href="#">Categorias</a>
+            <a href="#">Bonsais</a>
+            <a href="#" style="color:var(--green);font-weight:bold;">Chás e Infusões</a>
+            <a href="#">Acessórios</a>
+        </nav>
+        <div class="header-actions">
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <a href="/HTML/cadastro.html" class="perfil"></a>
+            <a href="/HTML/carrinho.html" class="carrinho"></a>
+        </div>
+    </header>
+
+    <div class="container shop-layout">
+        <aside class="sidebar">
+            <h3>Categorias</h3>
+            <ul class="filter-group">
+                <li><label><input type="checkbox" checked> Chá Verde</label></li>
+                <li><label><input type="checkbox"> Chá Preto</label></li>
+                <li><label><input type="checkbox"> Chá Branco</label></li>
+                <li><label><input type="checkbox"> Infusões</label></li>
+            </ul>
+
+            <h3>Filtros</h3>
+            <div class="filter-group">
+                <h4>Preço</h4>
+                <label><input type="checkbox"> Até R$30</label>
+                <label><input type="checkbox"> R$30 - R$60</label>
+            </div>
+            <div class="filter-group">
+                <h4>Embalagem</h4>
+                <label><input type="checkbox"> Sachê</label>
+                <label><input type="checkbox"> Granel</label>
+            </div>
+        </aside>
+
+        <main>
+            <div style="display: grid; grid-template-columns: 1fr auto; margin-bottom: 20px; align-items: center;">
+                <h2>Chás</h2>
+                <select style="padding: 5px;">
+                    <option>Mais vendidos</option>
+                    <option>Menor preço</option>
+                </select>
+            </div>
+
+            <div class="products-grid">
+                <a href="/HTML/produtos.html" class="product-card">
+                    <div class="product-img img1"></div>
+                    <h4>Chá Verde Sencha</h4>
+                    <div class="stars">★★★★★</div>
+                    <div class="price">R$ 29,90</div>
+                </a>
+                <a href="/HTML/produtos.html" class="product-card">
+                    <div class="product-img img2"></div>
+                    <h4>Chá Preto Assam</h4>
+                    <div class="stars">★★★★☆</div>
+                    <div class="price">R$ 32,90</div>
+                </a>
+                <a href="/HTML/produtos.html" class="product-card">
+                    <div class="product-img img3"></div>
+                    <h4>Infusão Camomila</h4>
+                    <div class="stars">★★★★★</div>
+                    <div class="price">R$ 26,90</div>
+                </a>
+                <a href="/HTML/produtos.html" class="product-card">
+                    <div class="product-img img4"></div>
+                    <h4>Chá Oolong</h4>
+                    <div class="stars">★★★★☆</div>
+                    <div class="price">R$ 49,90</div>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            <h3 class="logo"></h3>
+            <p style="color: #ccc; margin-top: 10px;">Conectando você à natureza.</p>
+        </div>
+        <div>
+            <h4>Institucional</h4>
+            <ul>
+                <li><a href="/HTML/contato.html">Quem Somos</a></li>
+                <li><a href="/HTML/contato.html">Nossa Missão</a></li>
+                <li><a href="/HTML/contato.html">Política de Privacidade</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Categorias</h4>
+            <ul>
+                <li><a href="/HTML/grade-produtos.html">Chás e Infusões</a></li>
+                <li><a href="/HTML/grade-produtos.html">Bonsais</a></li>
+                <li><a href="/HTML/grade-produtos.html">Acessórios</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Atendimento</h4>
+            <ul>
+                <li><a href="/HTML/contato.html">Contato</a></li>
+                <li><a href="/HTML/pedidos.html">Meus Pedidos</a></li>
+                <li><a href="/HTML/cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
